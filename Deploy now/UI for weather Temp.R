@@ -1,147 +1,10 @@
-# 
-# # Define UI
-# ui <- fluidPage(
-#   theme = shinytheme("united"),  # Enhanced visual appearance with a Bootstrap theme
-#   
-#   titlePanel(h1("Wolverhampton Weather Prediction", icon("sun")),
-#              windowTitle = "Weather Prediction with Decision Tree"),
-#   
-#   sidebarLayout(
-#     sidebarPanel(
-#       tags$h3("Weather Prediction Tool"),
-#       tags$p("Select a date to predict the temperature in Wolverhampton."),
-#       dateInput("date", 
-#                 label = "Choose a date:", 
-#                 value = Sys.Date(),
-#                 min = Sys.Date() - 30, 
-#                 max = Sys.Date() + 30),
-#       br(),
-#       selectInput("model",
-#                   label = "Select Model:",
-#                   choices = c("Linear Regression", "Decision Tree", "Random Forest", "SVM", "Neural Network")),
-#       br(),
-#       actionButton("predict", 
-#                    "Predict Temperature",
-#                    icon = icon("thermometer-half"),
-#                    class = "btn-success"),
-#       tags$hr(),
-#       tags$p("Developed using Decision Tree model."),
-#       tags$img(src = "weather_icon.png", height = 60, style = "opacity: 0.8")
-#     ),
-#     mainPanel(
-#       tags$div(style = "background-color: #ebf5fb; padding: 20px; border-radius: 10px;",
-#                tags$h4("Prediction:"),
-#                textOutput("prediction")
-#       )
-#     )
-#   )
-# )
-
-
-# 
-# # Define UI
-# ui <- fluidPage(
-#   theme = shinytheme("united"),  # Enhanced visual appearance with a Bootstrap theme
-# 
-#   titlePanel(h1("Wolverhampton Weather Prediction", icon("sun")),
-#              windowTitle = "Weather Prediction with Decision Tree"),
-# 
-#   sidebarLayout(
-#     sidebarPanel(
-#       tags$h3("Weather Prediction Tool"),
-#       tags$p("Select a date to predict the temperature in Wolverhampton."),
-#       dateInput("date",
-#                 label = "Choose a date:",
-#                 value = Sys.Date(),
-#                 min = Sys.Date() - 30,
-#                 max = Sys.Date() + 30),
-#       br(),
-#       selectInput("model",
-#                   label = "Select Model:",
-#                   choices = c("Linear Regression", "Decision Tree", "Random Forest", "SVR", 
-#                               "ARIMA", "Ridge Regression")),
-#       
-#       br(),
-#       actionButton("predict",
-#                    "Predict Temperature",
-#                    icon = icon("thermometer-half"),
-#                    class = "btn-success"),
-#       tags$hr(),
-#       tags$p("Developed by Uche."),
-#       #tags$img(src = "weather_icon.png", height = 60, style = "opacity: 0.8")
-#     ),
-#     mainPanel(
-#       tags$div(style = "background-color: #ebf5fb; padding: 20px; border-radius: 10px;",
-#                tags$h4("Prediction:"),
-#                textOutput("prediction")
-#       )
-#     )
-#   )
-# )
-# 
-# # Define server logic
-# server <- function(input, output, session) {
-#   initialText <- "Please select a date and click 'Predict' to see the temperature prediction."
-#   
-#   output$prediction <- renderText({
-#     if (!is.null(input$predict) && input$predict > 0) {
-#       sprintf("The predicted temperature for %s using %s model is %s°C.", 
-#               as.character(input$date), 
-#               input$model,
-#               round(runif(1, 15, 25), 1))  # Simulating a temperature prediction
-#     } else {
-#       initialText
-#     }
-#   })
-#   
-#   observeEvent(input$predict, {
-#     output$prediction <- renderText({
-#       sprintf("The predicted temperature for %s using %s model is %s°C.", 
-#               as.character(input$date), 
-#               input$model,
-#               round(runif(1, 15, 25), 1))  #Simulating a temperature prediction
-#     })
-#   })
-# }
-# 
-# # Run the application 
-# shinyApp(ui = ui, server = server)
-# 
-# 
-# # Define server logic
-# server <- function(input, output, session) {
-#   initialText <- "Please select a date and click 'Predict' to see the temperature prediction."
-#   
-#   output$prediction <- renderText({
-#     if (!is.null(input$predict) && input$predict > 0) {
-#       sprintf("The predicted temperature for %s using %s model is %s°C.", 
-#               as.character(input$date), 
-#               input$model,
-#               round(runif(1, 15, 25), 1))  # Simulating a temperature prediction
-#     } else {
-#       initialText
-#     }
-#   })
-#   
-#   observeEvent(input$predict, {
-#     output$prediction <- renderText({
-#       sprintf("The predicted temperature for %s using %s model is %s°C.", 
-#               as.character(input$date), 
-#               input$model,
-#               round(runif(1, 15, 25), 1))  # Simulating a temperature prediction
-#     })
-#   })
-# }
-# 
-# # Run the application 
-# shinyApp(ui = ui, server = server)
 
 library(shiny)
 library(shinythemes)
 
 # Define UI
 ui <- fluidPage(
-  theme = shinytheme("united"),  # Enhanced visual appearance with a Bootstrap theme
+  theme = shinytheme("united"),  
   
   titlePanel(h1("Wolverhampton Weather Prediction", icon("sun")),
              windowTitle = "Weather Prediction with Decision Tree"),
@@ -190,7 +53,7 @@ server <- function(input, output, session) {
       sprintf("The predicted temperature for %s using %s model is %s°C.", 
               as.character(input$date), 
               input$model,
-              round(runif(1, 15, 25), 1))  # Simulating a temperature prediction
+              round(runif(1, 15, 25), 1))  
     } else {
       initialText
     }
@@ -201,12 +64,12 @@ server <- function(input, output, session) {
       sprintf("The predicted temperature for %s using %s model is %s°C.", 
               as.character(input$date), 
               input$model,
-              round(runif(1, 15, 25), 1))  # Simulating a temperature prediction
+              round(runif(1, 15, 25), 1)) 
     })
   })
 }
 
-# Include CSS for cloud animation
+
 css <- "
 .cloud-container {
   position: relative;
