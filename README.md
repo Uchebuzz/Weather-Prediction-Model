@@ -1,4 +1,4 @@
-# Weather Prediction Model - ☀️ Sunny
+ # Weather Prediction Model ☀️🌧️  ⛅❄️
 This is my master's project on predicting the weather using machine learning models. In this project, several models were evaluated to determine their accuracy. Each model was tested using data from a 10-day period, specifically from June 1st to June 10th, 2024.
 
 
