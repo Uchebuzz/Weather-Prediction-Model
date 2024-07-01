@@ -41,7 +41,7 @@ This is my master's project on predicting the weather using machine learning mod
 
 ### 1. Data Collection:
    
-   The data was gotten from [Visual Crossing](https://www.visualcrossing.com/weather-history/Wolverhampton/us/2000-01-01). It was wolverhampton, Uk data from 01-01-2000 to 14-04-2024
+   The data was gotten from [Visual Crossing](https://www.visualcrossing.com/weather-history/Wolverhampton/us/2000-01-01). It was wolverhampton, Uk data from 01-01-2000 to 16-04-2024
 
 ### 2. Data Merging: 
    
