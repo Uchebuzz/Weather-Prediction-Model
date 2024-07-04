@@ -7,7 +7,7 @@ library(e1071)  # For SVR model
 
 # Function to read weather data from a CSV file
 get_weather_data <- function() {
-  file_path <- "C:/Users/Uche Buzz/Documents/Deployment/weatherdata.csv"
+  file_path <- "C:/Users/Uche Buzz/Documents/Deploy now/weatherdata.csv"
   data <- read.csv(file_path)
   return(data)
 }
