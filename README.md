@@ -75,3 +75,9 @@ Ensure you have R installed on your machine, and install the follow:
 `shiny`
 
 `shinythemes`
+
+`e1071`
+
+`caret`
+
+`zoo`
