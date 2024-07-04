@@ -34,7 +34,7 @@ This is my master's project on predicting the weather using machine learning mod
 
 `Evalation` : This contains my entire process, from pre-processing to model evaluation
 
-`Deploy`: This contains the R scripts used in deploying the model
+`Deployed`: This contains the R scripts used in deploying the model
 
 
 
