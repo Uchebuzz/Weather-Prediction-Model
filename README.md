@@ -66,7 +66,7 @@ Clone the repository:
 Install the required libraries:
 
 ### For Python: 
-You have to install all the [Python Libraries](#PythonLibraries), run:
+You have to install all the [Python Libraries](#PythonLibraries)
 
 ### For R
 
