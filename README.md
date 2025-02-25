@@ -30,11 +30,11 @@ This is my master's project on predicting the weather using machine learning mod
 
 
 ## Repository structure
-`Merging`: This contains the merging of the 24 datasets 
+`Merging` ([Merging.ipynb](https://github.com/Uchebuzz/Weather-Prediction-Model/blob/main/Merging.ipynb)): This contains the merging of the 24 datasets 
 
-`Evalation` : This contains my entire process, from pre-processing to model evaluation
+`Evalation`([Evaluation.ipynb](https://github.com/Uchebuzz/Weather-Prediction-Model/blob/main/Evaluation.ipynb)) : This contains my entire process, from pre-processing to model evaluation
 
-`Deployed`: This contains the R scripts used in deploying the model
+`Deployed`([Deployed](https://github.com/Uchebuzz/Weather-Prediction-Model/tree/main/Deployed)): This contains the R scripts used in deploying the model
 
 
 
